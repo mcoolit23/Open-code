@@ -505,11 +505,10 @@ button {
     display: block;
     margin-bottom: 14px;
     color: var(--slate);
-    font-size: clamp(0.78rem, 1.3vw, 0.9rem);
+    font-size: clamp(1.65rem, 3vw, 2.5rem);
     font-weight: 800;
-    letter-spacing: 0.16em;
-    line-height: 1.4;
-    text-transform: uppercase;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
 }
 
 .hero-role {
