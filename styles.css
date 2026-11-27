@@ -1108,6 +1108,84 @@ button {
     line-height: 1.6;
 }
 
+
+/* =========================================================
+   Upgrades: Language Switcher, Portrait Photo, Dual Projects & Copy Button
+   ========================================================= */
+.header-actions-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 38px;
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--navy);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: background-color var(--transition), border-color var(--transition);
+}
+
+.lang-toggle:hover {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+}
+
+.lang-toggle .lang-inactive {
+    color: var(--muted);
+    font-weight: 600;
+}
+
+.profile-image-container {
+    width: 100%;
+    margin-bottom: 18px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.profile-image {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    object-position: center 20%;
+}
+
+.profile-card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.projects-grid-featured {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.coding-visual {
+    background: linear-gradient(160deg, #0D2239, #163A63 55%, #1E548E);
+}
+
+.email-buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.copy-btn {
+    width: 100%;
+}
 /* =========================================================
    Featured project
    ========================================================= */
