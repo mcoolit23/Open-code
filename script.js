@@ -9,6 +9,7 @@ document.documentElement.classList.add('js');
 (function () {
     const header = document.getElementById('site-header');
     const navToggle = document.getElementById('nav-toggle');
+    const openNavigationLabel = navToggle?.getAttribute('aria-label');
     const primaryNav = document.getElementById('primary-navigation');
     const navLinks = Array.from(document.querySelectorAll('.nav-link'));
     const backToTop = document.getElementById('back-to-top');
@@ -29,7 +30,7 @@ document.documentElement.classList.add('js');
 
         primaryNav.classList.toggle('is-open', open);
         navToggle.setAttribute('aria-expanded', String(open));
-        navToggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+        navToggle.setAttribute('aria-label', open ? navToggle.dataset.closeLabel : openNavigationLabel);
 
         if (!open && restoreFocus) {
             navToggle.focus();

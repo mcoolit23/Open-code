@@ -44,6 +44,9 @@
         ]
     }
     </script>
+    <link rel="alternate" hreflang="en" href="https://jcportfolio.jonathancostales23.workers.dev/">
+    <link rel="alternate" hreflang="fi" href="https://jcportfolio.jonathancostales23.workers.dev/index.fi.html">
+    <link rel="alternate" hreflang="sv" href="https://jcportfolio.jonathancostales23.workers.dev/index.sv.html">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to main content</a>
@@ -58,7 +61,7 @@
                 </span>
             </a>
 
-            <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation">
+            <button class="nav-toggle" id="nav-toggle" data-close-label="Close navigation" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation">
                 <span class="nav-toggle-bars" aria-hidden="true">
                     <span></span>
                     <span></span>
@@ -76,6 +79,15 @@
                     <li><a class="nav-link nav-contact" href="#contact">Contact</a></li>
                 </ul>
             </nav>
+
+            <details class="language-picker">
+                <summary aria-label="Language: English">EN</summary>
+                <div class="language-options">
+                        <a href="index.html" hreflang="en" lang="en" aria-current="page">English</a>
+                        <a href="index.fi.html" hreflang="fi" lang="fi">Suomi</a>
+                        <a href="index.sv.html" hreflang="sv" lang="sv">Svenska</a>
+                </div>
+            </details>
         </div>
     </header>
 
