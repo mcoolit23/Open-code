@@ -322,6 +322,14 @@ button {
     white-space: nowrap;
 }
 
+.site-header .brand-copy strong {
+    font-size: clamp(1.125rem, 1.7vw, 1.25rem);
+}
+
+.site-header .brand-copy span {
+    font-size: 0.8125rem;
+}
+
 .primary-nav {
     min-width: 0;
 }
@@ -506,6 +514,16 @@ button {
 
 .hero-role {
     display: block;
+}
+
+.hero-role-translation {
+    display: block;
+    margin-top: 8px;
+    color: var(--slate);
+    font-size: clamp(1rem, 2.2vw, 1.65rem);
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.2;
 }
 
 .hero-title-accent {
@@ -2065,7 +2083,7 @@ button {
         gap: 12px;
     }
 
-    .brand-copy span {
+    .brand-footer .brand-copy span {
         display: none;
     }
 
