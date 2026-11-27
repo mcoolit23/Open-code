@@ -466,6 +466,19 @@ button {
     align-items: center;
 }
 
+.hero-portrait {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    aspect-ratio: 1 / 1.05;
+    object-fit: cover;
+    object-position: center 32%;
+    justify-self: center;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 30px 70px rgba(16, 40, 68, 0.22);
+}
+
 .hero-content {
     min-width: 0;
 }
